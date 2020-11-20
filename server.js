@@ -10,11 +10,11 @@ console.log('server started at' + port);
 
 app.post('/api/login',function(req,res) {
     var result = [{
-        title:"javascript_code",
+        title:"java",
         learner: "Asish",
         level: "Beginner"
     },{
-        title:"C_code",
+        title:"C",
         learner: "Asish",
         level: "Beginner" 
     },{
