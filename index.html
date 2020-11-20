@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM.com</title>
+    <!-- [if lt IE 9]
+    <script src="https://oss.maxcdn.com/html5shiv//3.7.3/html5shiv.min.js">
+    </script>
+    <!endif>
+    -->
+<link rel="stylesheet" type="text/css" href="1st_project_css/style.css">
+
+</head>
+<body>
+    <div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/courses.html">Courses</a></li> 
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Home</h1>
+        
+    </header>
+    <section id="main">
+    <p>This is the home page of <b>ASISH MAITRA</b></p>
+         
+<div class="login-form">
+
+<form action="/api/login" method="POST" id=loginform> 
+    <label for="username">Username :</label>
+    <input type="text" name="username" id="username" /> <br/>
+
+
+    <label for="password">Password :</label>
+    <input type="password" name="password" id="password" /> <br/>
+
+
+    <input type="checkbox" name="remember" id="remember">
+    <label for="remember">Remenber Me</label> 
+
+        <br/>
+            <div id=errormsg>
+
+            </div>
+        <br/>
+
+    <input type="submit" name="Loginbutton" value="Login">
+    <input type="reset" name="cancelbutton" value="Cancel">
+</form>
+
+<div id="logoutsection">
+    <p>You are logged in.</p>
+    <button id="logoutbutton">Logout</button>
+
+</div>
+
+</div>
+
+<div id="results">
+    <button id="toggleButton">Hide</button>
+    <div id="resultlist">
+    Here will display all the courses.
+ </div>
+</div>
+
+    </section>
+
+    <footer>
+       &copy; 2020 Asish Maitra
+    </footer>
+
+    </div>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
